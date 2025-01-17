@@ -12,7 +12,8 @@ import SwiftData
 struct maybeUltraExtremeSuperRareTodoApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Item.self,
+            User.self,
+            Contents.self
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
